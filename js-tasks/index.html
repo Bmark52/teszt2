@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.6.1.min.js" integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
+    <script src="./js/scripts1.js"></script>
+    <title>Tesztfeladat</title>
+    <style>
+        body {
+            margin: 50px;
+        }
+    </style>
+</head>
+
+<body>
+    <form action = "", method = "GET" id = "tableForm">
+        <fieldset>
+            <div class="mb-3">
+                <label for = "rowCount" class = "form-label">Sorok száma</label>
+                <input type = "number" class = "form-control" id = "rows" name = "rows" placeholder = "Adja meg a sorok számát...">
+            </div>
+
+            <div class="mb-3">
+                <label for = "columnCount" class = "form-label">Oszlopok száma</label>
+                <input type = "number" class = "form-control" id = "columns" name = "columns" placeholder = "Adja meg az oszlopok számát...">
+            </div>
+
+            <div class = "form-check">
+                <input class = "form-check-input" type = "radio" name = "radioBtn" id="radioBtnJS" value = "JS" checked> 
+                <label class = "form-check-label" for = "radioBtn">JS</label>
+                    <br>
+                <input class = "form-check-input" type = "radio" name = "radioBtn" id="radioBtnPHP" value = "PHP"> 
+                <label class = "form-check-label" for = "radioBtn">PHP</label>
+            </div>
+                <br>
+            <button type = "button" class = "btn btn-primary" id = "generateBtn" onclick = "radioBtnCheck()">Mentés</button>
+        </fieldset>
+</form>
+
+    <br>
+    <div class="mb-3">
+        <table class="table table-bordered" id="genTable"></table>
+    </div>
+    <div class="mb-3">
+        <span id = "btnContainer"></span>
+    </div>
+</body>
+</html>
